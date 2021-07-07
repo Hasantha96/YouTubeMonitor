@@ -1,0 +1,23 @@
+{
+	"name": "Youtube Bandwidth Monitor",
+	"version": "0.0.0.1",
+	"description": "An extension to measure the bandwidth when watching a youtube video",
+	"short_name": "Bandwidth Monitor",
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"icons": { "128": "img/icon.png" },
+
+	"browser_action": {
+		"default_icon": {
+			"19": "img/icon.png",
+			"38": "img/icon.png"
+		},
+		"default_title": "Youtube Bandwidth Monitor",
+        "default_popup": "popup.html"
+	},
+    
+	"permissions": ["tabs", "webRequest", "webRequestBlocking", "*://*/*"],
+	"manifest_version": 2
+}
